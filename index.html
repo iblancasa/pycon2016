@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>PyCon2016</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/blood.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="img/bg1.jpg">
+					<div style="background-color:  rgba(0, 0, 0, 0.7);">
+						<h1>GitHubCity</h1>
+						<h3>una biblioteca para conocer tu comunidad</h3>
+						<h4>PyCon 2016</h4>
+					</div>
+				</section>
+				<section data-background="img/bg3.jpg">
+					<div style="background-color:  rgba(0, 0, 0, 0.7);">
+					<h2>En el inicio de los tiempos...</h2>
+				</div>
+				</section>
+
+				<section data-background="img/bg4.jpg">
+				</section>
+
+				<section data-background="img/chaos.jpg">
+					<div style="background-color:  rgba(0, 0, 0, 0.7);">
+					<h2>Problemas varios</h2>
+					<ul>
+						<li>Escrito en CoffeeScript</li>
+						<li>Poco documentado</li>
+						<li>Dificultad para integrar nuevas funcionalidades</li>
+						<li>No testeado</li>
+						<li>Se pierden usuarios</li>
+					</ul>
+					</div>
+				</section>
+
+				<section data-background="img/peace.jpg">
+					<div style="background-color:  rgba(0, 0, 0, 0.7);">
+					<h2>GitHubCity</h2>
+					<ul>
+						<li>Escrito en Python</li>
+						<li>Menos acoplado</li>
+						<li>Con plantillas intercambiables</li>
+						<li>Testeado, documentado, sencillo de usar...</li>
+					</ul>
+				</div>
+				</section>
+				<section data-background="img/bg6.jpg">
+				</section>
+				<section data-background="img/bg7.jpg">
+				</section>
+
+				<section data-background="img/bg7.jpg">
+					<div style="background-color:  rgba(0, 0, 0, 0.7);">
+					<h2>Estado actual</h2>
+					<ul>
+						<li>Sin adaptar a la nueva interfaz:(</li>
+						<li>Testeado (salvo por lo anterior)</li>
+						<li>Con ejemplos de uso</li>
+						<li>Muy lento</li>
+					</ul>
+				</div>
+				</section>
+
+				<section data-background="img/net1.jpg">
+					<div style="background-color:  rgba(0, 0, 0, 0.7);">
+					<h2>¿Por qué esto mola?</h2>
+					<ul>
+						<li>Es libre</li>
+						<li>Te ayuda a conocer los proyectos y desarrolladores de tu alrededor</li>
+						<li>Le da un poco de vida al asunto</li>
+						<li>Se pueden hacer miles de cosas</li>
+						<li>Te da visibilidad como desarrollador</li>
+					</ul>
+					</div>
+				</section>
+
+				<section data-background="img/net1.jpg">
+				</section>
+
+				<section data-background="img/net1.jpg">
+					<div style="background-color:  rgba(0, 0, 0, 0.7);">
+					<h2>Lo que viene</h2>
+					<ul>
+						<li>Adaptar a la nueva interfaz (obvio)</li>
+						<li>Mejorar el sistema de testeo</li>
+						<li>Empezar a publicar rankings de todas las provincias</li>
+						<li>Redes sociales en GitHub</li>
+						<li>WebApp con los rankings</li>
+						<li>Lo que surja</li>
+					</ul>
+					</div>
+				</section>
+
+				<section data-background="img/net1.jpg">
+					<img width="140%" src="img/rankings.gif">
+				</section>
+
+				<section data-background="img/bg1.jpg">
+					<div style="background-color:  rgba(0, 0, 0, 0.7);">
+						<h3>Cosas a las que echarle un ojo</h3>
+					<ul>
+						<li><a href="https://github.com/JJ/top-github-users-data/tree/master/formatted">GitHub Rankings</li>
+						<li><a href="https://github.com/JJ/github-city-rankings">GitHub City Rankings (script)</a></li>
+						<li><a href="https://github.com/iblancasa/GitHubCity">GitHub City (Python)</a></li>
+						<li><a href="https://github.com/JJ/github-nets">GitHub Nets</a></li>
+						<li><a href="https://thewinnower.com/papers/github-rankings-and-its-impact-on-the-local-free-software-development-community">
+	GitHub rankings and its impact on the local free software development community</a></li>
+						<li><a href="http://www.meetup.com/es-ES/Granada-Geek/">Granada Geek</a></li>
+					</ul>
+				</div>
+				</section>
+
+				<section data-background="img/bg2.jpg">
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
